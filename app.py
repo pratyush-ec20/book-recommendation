@@ -3,10 +3,19 @@ import pickle
 import pandas as pd
 import numpy as np
 
-popular_df = pickle.load(open('popular.pkl','rb'))
-pt = pickle.load(open('pt.pkl','rb'))
-books = pickle.load(open('books.pkl','rb'))
-similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
+pickle_off1=open('popular.pkl','rb')
+popular_df = pd.read_pickle(pickle_off1)
+
+pickle_off2=open('pt.pkl','rb')
+pt=pd.read_pickle(pickle_off2)
+
+pickle_off3=open('books.pkl','rb')
+books=pd.read_pickle(pickle_off3)
+
+pickle_off4=open('similarity_score.pkl','rb')
+similarity_score=pd.read_pickle(pickle_off4)
+
+
 
 
 
